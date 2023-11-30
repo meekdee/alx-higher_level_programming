@@ -16,6 +16,6 @@ if __name__ == "__main__":
 
     else:
         print("{0} arguments:".format(len))
-        
+
     for i, arg in enumerate(argv):
         print("{0}: {1}".format(i + 1, argv[i]))
