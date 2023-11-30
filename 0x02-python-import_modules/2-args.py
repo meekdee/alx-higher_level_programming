@@ -7,6 +7,15 @@ if __name__ == "__main__":
 
     argv = sys.argv[1:]
     len = len(argv)
-    x = "argument" if len == 1 else "arguments"
 
+    if len == 0:
+        print("{0} arguments.".format(len))
 
+    elif len == 1:
+        print("{0} argument:".format(len))
+
+    else:
+        print("{0} arguments:".format(len))
+        
+    for i, arg in enumerate(argv):
+        print("{0}: {1}".format(i + 1, argv[i]))
