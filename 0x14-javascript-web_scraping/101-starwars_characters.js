@@ -21,7 +21,7 @@ request.get(url, async (error, response, body) => {
   }
 });
 
-function fetchCharacter(characterURL) {
+function fetchCharacter (characterURL) {
   return new Promise((resolve, reject) => {
     request.get(characterURL, (error, response, body) => {
       if (error) {
